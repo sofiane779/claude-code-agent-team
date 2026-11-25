@@ -1,0 +1,15 @@
+{
+  "_comment": "Exemple de configuration MCP. Copier en .mcp.json (ignoré par Git) et remplacer les valeurs entre chevrons. Aucune clé ne doit figurer dans ce fichier d'exemple.",
+
+  "mcpServers": {
+    "playwright": {
+      "command": "npx",
+      "args": ["-y", "@playwright/mcp@latest"]
+    },
+
+    "supabase": {
+      "type": "http",
+      "url": "https://mcp.supabase.com/mcp?project_ref=<VOTRE_PROJECT_REF>&read_only=true"
+    }
+  }
+}
